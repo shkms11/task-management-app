@@ -4,12 +4,6 @@ import "@testing-library/jest-dom";
 import Task from "./Task";
 import { describe, expect, test, vi } from "vitest";
 
-interface TaskItem {
-    id: number;
-    title: string;
-    isCompleted: boolean;
-}
-
 describe("Task Component", () => {
     test("renders input and button", () => {
         render(<Task addTask={() => {}} />);
